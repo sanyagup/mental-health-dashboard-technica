@@ -1,0 +1,76 @@
+/* forgotpass.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+  .forgot-container {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #77EEF7;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .forgot-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 32rem;
+    height: 25rem;
+    padding: 3rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+
+  .forgot-input-field {
+    padding: 0.5rem 0.75rem;
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #FFC0CB;
+    border-radius: 0.375rem;
+    outline: none;
+  }
+
+  .forgot-input-field:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+
+  .forgot-submit-button {
+    background-color: #FFC0CB;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+  }
+
+  .forgot-submit-button:hover {
+    background-color: #ffff;
+  }
+
+  .forgot-back-link {
+    margin-top: 0.75rem;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+    transition: color 2s ease;
+  }
+
+  .forgot-back-link:hover {
+    color: #1e40af;
+  }
+
+  ;forgot-success-message {
+    color: #b9f2ce;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
