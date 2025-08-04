@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import ForgotPassword from "./pages/ForgotPassword";
 import MentalHealthTracking from "./pages/MentalHealthTracking";
+import JournalingPrompts from "./pages/JournalingPrompts";
 import "./App.css"
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/MentalHealthTracking" element={user ? <MentalHealthTracking user={user} /> : <Navigate to="login" replace/>}/>
+        <Route path="/JournalingPrompts" element={user ? <JournalingPrompts user={user} /> : <Navigate to="login" replace/>}/>
       </Routes>
     </BrowserRouter>
   );
