@@ -7,9 +7,9 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBgn20FDjBiMyq6ljStNA2HYHM5F5iEL8o",
-    authDomain: "mentalhealthdashboard-a77c4.firebaseapp.com",
-    projectId: "mentalhealthdashboard-a77c4",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
     storageBucket: "mentalhealthdashboard-a77c4.firebasestorage.app",
     messagingSenderId: "958383408145",
     appId: "1:958383408145:web:4704f121d3a2ffbdeb9db0"
