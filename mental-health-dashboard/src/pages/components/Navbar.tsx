@@ -1,4 +1,4 @@
-import { auth } from "../firebase/firebase.ts";
+import { auth } from "../../firebase/firebase";
 import  { signOut } from "firebase/auth";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Ensure you have the correct path to your CSS file
