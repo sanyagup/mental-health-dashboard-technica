@@ -17,9 +17,10 @@ export default function LoginPage() {
     try {
       if (signup) {
         const userCred = await createUserWithEmailAndPassword(auth, email, password);
-        const defaultData: UserData = { 
-          email: email, 
-          notes: "Use the textbox above to change me!" 
+        const defaultData: UserData = {
+          email: email,
+          notes: "Use the textbox above to change me!",
+          moods: []
         };
         await setDoc(doc(db, "users", userCred.user.uid), defaultData);
         navigate("/");

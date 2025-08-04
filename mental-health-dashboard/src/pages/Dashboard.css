@@ -1,0 +1,14 @@
+/* Navigation Bar Styles */
+.welcome-name {
+  color: black;
+  padding-left: 30px;
+}
+
+  /* Main Content Styles */
+  .dashboard-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    padding: 2rem;
+  }
