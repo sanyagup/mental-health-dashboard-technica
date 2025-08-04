@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
-import { auth, db } from "/Users/sanyagupta/Documents/mental-health-dashboard-technica/mental-health-dashboard/src/firebase/firebase.ts";
-import type { UserData } from "/Users/sanyagupta/Documents/mental-health-dashboard-technica/mental-health-dashboard/src/types/types.ts";
+import { db } from "../firebase/firebase.ts";
+import type { UserData } from "../types/types.ts"
 import  { signOut, type User } from "firebase/auth";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 import "./MentalHealthTracking.css";
 import { Link } from "react-router-dom";
+import { auth } from "../firebase/firebase";
 
 
 interface MentalHealthTrackingProps {
