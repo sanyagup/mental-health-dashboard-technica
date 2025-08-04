@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
-import { db } from "../firebase/firebase.ts";
-import type { UserData } from "../types/types.ts"
+import { auth, db } from "/Users/sanyagupta/Documents/mental-health-dashboard-technica/mental-health-dashboard/src/firebase/firebase.ts";
+import type { UserData } from "/Users/sanyagupta/Documents/mental-health-dashboard-technica/mental-health-dashboard/src/types/types.ts";
 import  { signOut, type User } from "firebase/auth";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 import "./MentalHealthTracking.css";
 import { Link } from "react-router-dom";
-import { auth } from "../firebase/firebase";
 
 
 interface MentalHealthTrackingProps {
@@ -60,39 +59,9 @@ export default function MentalHealthTracking({ user }: MentalHealthTrackingProps
       fetchData();
     }, [user]);
 
-    const handleLogout = async () => {
-      try {
-        await signOut(auth);
-      } catch (error) {
-        console.error("Error signing out:", error);
-      }
-    };
-
   return (
     <div>
-        <nav className="navbar">
-          <div className="navbar-links">
-            <Link to="/" className="navbar-link">
-              Dashboard
-            </Link>
-            <Link to="/MentalHealthTracking" className="navbar-link">
-              Mental Health Tracking
-            </Link>
-            <Link to="/profile" className="navbar-link">
-              Profile
-            </Link>
-            <Link to="/settings" className="navbar-link">
-              Settings
-            </Link>
-          </div>
-          <button
-            className="logout-button"
-            onClick={handleLogout}
-          >
-            Log Out
-          </button>
-      </nav>
-
+      <Navbar />
 
       <h1 className="title">Welcome {user.email} to the Mental Health Dashboard ( ˶ˆᗜˆ˵ )</h1>
       <h2 className="description">This is where you can log your mood and see how your mood changes throughout the Hackathon. According to research, tracking your mood can help you realize whether you need to take a break or not. Hope this helps you hacker! </h2>
