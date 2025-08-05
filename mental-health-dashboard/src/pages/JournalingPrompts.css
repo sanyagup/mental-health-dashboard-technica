@@ -1,0 +1,56 @@
+.journaling-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+/* Textarea styling */
+textarea {
+    width: 110%;
+    max-width: 500px;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    padding-left: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    resize: vertical;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+  
+textarea:focus {
+    border-color: #77EEF7;
+    box-shadow: 0 0 8px rgba(62, 142, 208, 0.4);
+}
+  
+  /* Save button styling */
+.save-button {
+    margin-top: 16px;
+    background: #77EEF7;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+  
+button:hover {
+    transform: translateY(-2px);
+    background: pink;
+}
+  
+  /* Saved note text */
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #111827;
+}
+  
+p strong {
+    color: #62bcc3;
+}
