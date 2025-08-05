@@ -27,6 +27,9 @@ export default function Navbar() {
             <Link to="/JournalingPrompts" className="navbar-link">
               Journaling Prompts
             </Link>
+            <Link to="/MusicPlaylists" className="navbar-link">
+              Music Playlists
+            </Link>
             <Link to="/profile" className="navbar-link">
               Profile
             </Link>
