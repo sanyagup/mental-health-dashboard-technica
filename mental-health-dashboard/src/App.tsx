@@ -10,6 +10,7 @@ import JournalingPrompts from "./pages/JournalingPrompts";
 import MusicPlaylists from "./pages/MusicPlaylists";
 import Profile from "./pages/Profile";
 import "./App.css"
+import StretchingGuide from "./pages/StretchingGuide";
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
@@ -30,6 +31,7 @@ function App() {
         <Route path="/MentalHealthTracking" element={user ? (<MentalHealthTracking user={user} /> ) : ( <Navigate to="/login" replace /> ) } />
         <Route path="/JournalingPrompts" element={user ? (<JournalingPrompts user={user} /> ) : ( <Navigate to="/login" replace /> ) } />
         <Route path="/MusicPlaylists" element={<MusicPlaylists />} />
+        <Route path="/StretchingGuide" element={<StretchingGuide />} />
         <Route path="/Profile" element={user ? (<Profile user={user} /> ) : ( <Navigate to="/login" replace /> ) } />
       </Routes>
     </BrowserRouter>
