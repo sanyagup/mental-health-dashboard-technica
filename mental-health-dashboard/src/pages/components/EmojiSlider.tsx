@@ -7,7 +7,7 @@ export default function EmojiSlider() {
   const EMOJIS = ["😞", "😐", "🙂", "😃", "🤩"];
   return (
     <div className="checkin-card">
-      <h2>How are you feeling today?</h2>
+      <h2 className="emoji-title">How are you feeling today?</h2>
         <div className="emoji-row">
           {EMOJIS.map((e, idx) => (
             <button key={idx} className={`emoji-btn ${emoji === idx ? "selected" : ""}`} onClick={() => setEmoji(idx)}> {e} </button>

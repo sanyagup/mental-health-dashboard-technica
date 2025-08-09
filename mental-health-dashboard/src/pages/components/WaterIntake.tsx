@@ -59,7 +59,7 @@ export default function WaterIntakeTracker({ goal = 8, icon = "drop" }: Props) {
 
   return (
     <div className="water-card" aria-label="Water intake tracker">
-      <h3 className="water-title">Water Intake</h3>
+      <h2 className="water-title">Water Intake</h2>
       <div className="water-row" role="list" aria-label="Water goal icons">
         {slots.map((i) => {
           const filled = i < count;

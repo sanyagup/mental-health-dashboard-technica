@@ -4,7 +4,7 @@
 }
 
 .dashboard-container {
-  font-family: Arial, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .content {
@@ -16,6 +16,12 @@
 }
 
 .dashboard-content {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start; /* each widget keeps its own height */
+}
+
+.center-container {
   display: flex;
   gap: 10px;
 }

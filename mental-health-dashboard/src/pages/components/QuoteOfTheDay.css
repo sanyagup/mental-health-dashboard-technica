@@ -1,0 +1,29 @@
+.quote-of-the-day {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    margin-left: 30px;
+    max-width: 300px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+
+.description-quote {
+    text-align: center;
+}
+
+.quote-container {
+    text-align: center;
+}
+
+.random-quote {
+    padding-top: 50px;
+}
+
+.quote-id {
+    padding-top: 70px;
+}
+
+.description-quote {
+    padding-top: 50px;
+}
