@@ -8,6 +8,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import MentalHealthTracking from "./pages/MentalHealthTracking";
 import JournalingPrompts from "./pages/JournalingPrompts";
 import "./App.css"
+import StretchingGuide from "./pages/StretchingGuide";
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/MentalHealthTracking" element={user ? <MentalHealthTracking user={user} /> : <Navigate to="login" replace/>}/>
         <Route path="/JournalingPrompts" element={user ? <JournalingPrompts user={user} /> : <Navigate to="login" replace/>}/>
+        <Route path="/StretchingGuide" element={<StretchingGuide />} />
       </Routes>
     </BrowserRouter>
   );

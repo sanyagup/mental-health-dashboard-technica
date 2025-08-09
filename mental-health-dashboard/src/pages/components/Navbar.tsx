@@ -27,6 +27,9 @@ export default function Navbar() {
             <Link to="/JournalingPrompts" className="navbar-link">
               Journaling Prompts
             </Link>
+            <Link to="/StretchingGuide" className="navbar-link">
+              Stretching Guide
+            </Link>
             <Link to="/profile" className="navbar-link">
               Profile
             </Link>
