@@ -20,9 +20,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 32rem; /* ~max-w-lg */
-  height: 25rem; /* roughly h-100 */
-  padding: 3rem 1.5rem; /* px-6 py-12 */
+  max-width: 32rem;
+  height: 25rem;
+  padding: 3rem 1.5rem;
   border: 2px solid black;
   border-radius: 0.5rem;
 }
@@ -38,12 +38,12 @@ body {
 }
 
 .input-field:focus {
-  border-color: #3b82f6; /* blue-500 */
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-blue-500 */
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); 
 }
 
 .submit-button {
-  background-color: #FFC0CB; /* blue-500 */
+  background-color: #FFC0CB;
   color: black;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -59,7 +59,7 @@ body {
 .toggle-text,
 .forgot-link {
   margin-top: 0.75rem;
-  color: black; /* blue-600 */
+  color: black;
   text-decoration: underline;
   cursor: pointer;
   user-select: none;
@@ -68,5 +68,5 @@ body {
 
 .toggle-text:hover,
 .forgot-link:hover {
-  color: #1e40af; /* blue-800 */
+  color: #1e40af;
 }

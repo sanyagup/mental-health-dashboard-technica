@@ -1,7 +1,7 @@
 import { auth } from "../../firebase/firebase";
 import  { signOut } from "firebase/auth";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // Ensure you have the correct path to your CSS file
+import "./Navbar.css";
 
 export default function Navbar() {
 
@@ -29,12 +29,6 @@ export default function Navbar() {
             </Link>
             <Link to="/MusicPlaylists" className="navbar-link">
               Music Playlists
-            </Link>
-            <Link to="/profile" className="navbar-link">
-              Profile
-            </Link>
-            <Link to="/settings" className="navbar-link">
-              Settings
             </Link>
           </div>
           <button
