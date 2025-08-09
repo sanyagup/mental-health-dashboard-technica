@@ -14,8 +14,10 @@ export default function Dashboard({ user }: DashboardProps) {
     <div className="min-h-screen flex flex-col items-center my-15">
       <Navbar />
       <h1 className="welcome-name">Welcome, {user.email} ! ( ˘ ³˘)♥︎</h1>
-      <EmojiSlider />
-      <WaterIntakeTracker goal={8} icon="cup" />
+      <div className="dashboard-content">
+        <EmojiSlider />
+        <WaterIntakeTracker goal={8} icon="cup" />
+      </div>
     </div>
   );
 }

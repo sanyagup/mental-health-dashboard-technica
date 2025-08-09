@@ -22,8 +22,9 @@ export default function StretchingGuide() {
         };
 
     return (
-        <div className="stretching-guide">
+        <div> 
             <Navbar />
+        <div className="stretching-guide">
             <h1 className="title">Stretching Guide</h1>
             <p>Take a break and try one of these relaxing stretching tutorials to refresh your body and mind!</p>
             <p className="description">Click the button to get a stretching tutorial you can simply do at your workstation!</p>
@@ -35,6 +36,7 @@ export default function StretchingGuide() {
                     </>
                 )}
             </div>
+        </div>
     );
 
 };
