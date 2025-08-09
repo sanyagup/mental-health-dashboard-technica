@@ -1,0 +1,38 @@
+.checkin-card {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  margin-left: 30px;
+  max-width: 300px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.emoji-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.emoji-btn {
+  font-size: 24px;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.emoji-btn:hover {
+  background: #f0f0f0;
+}
+
+.emoji-btn.selected {
+  border-color: black;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
