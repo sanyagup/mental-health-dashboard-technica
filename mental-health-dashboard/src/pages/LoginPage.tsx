@@ -20,7 +20,8 @@ export default function LoginPage() {
         const defaultData: UserData = {
           email: email,
           notes: "Use the textbox above to change me!",
-          moods: []
+          moods: [],
+          phone: "",
         };
         await setDoc(doc(db, "users", userCred.user.uid), defaultData);
         navigate("/");
