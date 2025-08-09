@@ -30,6 +30,15 @@ export default function Navbar() {
             <Link to="/MusicPlaylists" className="navbar-link">
               Music Playlists
             </Link>
+            <Link to="/StretchingGuide" className="navbar-link">
+              Stretching Guide
+            </Link>
+            <Link to="/profile" className="navbar-link">
+              Profile
+            </Link>
+            <Link to="/settings" className="navbar-link">
+              Settings
+            </Link>
           </div>
           <button
             className="logout-button"
