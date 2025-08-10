@@ -78,7 +78,7 @@ export default function MentalHealthTracking({ user }: MentalHealthTrackingProps
         </div>
 
         <div className="right-sidebar">
-          <button className="button" onClick={resetMoods}> Reset Counter (temp) </button>
+          <button className="button" onClick={resetMoods}>Reset Counter</button>
           <button className="button" onClick={() => incrementMood(0)}>Happy</button>
           <button className="button" onClick={() => incrementMood(1)}>Sad</button>
           <button className="button" onClick={() => incrementMood(2)}>Neutral</button>
